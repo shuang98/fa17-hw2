@@ -7,6 +7,9 @@ class Stringify
   end
 
   def what_am_i
-  	# YOUR IMPLEMENTATION HERE
+    if not @name.blank? or not @adjective.blank?
+        return @name + ' is so ' + @adjective
+    end
+    return "You are nothing!"
   end
 end
